@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Type</title>
+    <link rel="shortcut icon" href="./img/logo-javascript.svg" type="image/x-icon">
+    <style>
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+      }
+
+      code {
+        background: bisque;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Type</h1>
+    <p><b>Type uch qisimga bo'lingan bo'lib</b></p>
+    <ol>
+      <li>Type conversion</li>
+      <li>Type coercion</li>
+      <li>Truhty va Falsy</li>
+    </ol>
+<hr>
+   
+    <h3>Masalan-1</h3>
+    <p>
+        <b>Type conversion</b> - Javascript dasturlash tilida saqlanayotgan
+        ma'lumot turini bir ko'rinishdan ikkinchi ko'rinishga o'tkazish
+      </p>
+      
+    <p>
+      <b>Number</b> - primitiv o'rab turuvchi obyektidan foydalanib, berilga
+      malumot turini son ko'rinishga o'tkazish imkonyati mavjud. Agar berilgan
+      ma'lumot son ko'rinishiga o'tkazishni imkoni bo'lmasa, <b>NaN</b> - (Not a
+      Number) maxsus qiymati yuzaga keladi.
+    </p>
+    <div style="display: flex">
+      <code>const yosh = '23' </code>
+      <p style="opacity: 0.5; margin: 0">// String</p>
+    </div>
+    <div style="display: flex">
+      <code>console.<code style="color: red">log</code>(yosh); </code>
+      <p style="opacity: 0.5; margin: 0">// String</p>
+    </div>
+    <div style="display: flex">
+      <code>console.<code style="color: red">log(Number</code>(yosh)); </code>
+      <p style="opacity: 0.5; margin: 0">// Number</p>
+    </div>
+    <br />
+    <div style="display: flex">
+      <code>console.<code style="color: red">log</code>(yosh+1); </code>
+      <p style="opacity: 0.5; margin: 0">// 231 (concatenation)</p>
+    </div>
+    <div style="display: flex">
+      <code
+        >console.<code style="color: red">log(Number</code>(yosh) + 1);
+      </code>
+      <p style="opacity: 0.5; margin: 0">// 24</p>
+    </div>
+    <br />
+    <div style="display: flex">
+      <code>const ism = <code style="color: yellowgreen;">'Abrorbek';</code>
+    </div>
+    <div style="display: flex">
+      <code
+        >console.<code style="color: red">log(Number</code>(ism));
+      </code>
+      <p style="opacity: 0.5; margin: 0">// NaN</p>
+    </div>
+    <br>
+    <h3>String</h3>
+    <p><b>String</b> - primitiv o'rab turuvchi obyektidan foydalanib, berilgan ma'lumot turini string ko'rinishga o'tkazish imkoniyati mavjud.</p>
+    <br>
+    <div style="display: flex">
+        <code>const yil = <code style="color: brown;">2024</code></code>
+        <p style="opacity: 0.5; margin: 0">// Number</p>
+      </div>
+      <div style="display: flex">
+        <code>console.<code style="color: red">log</code>(yil); </code>
+        <p style="opacity: 0.5; margin: 0">// Number</p>
+      </div>
+      <div style="display: flex">
+        <code>console.<code style="color: red">log(String</code>(yil)); </code>
+        <p style="opacity: 0.5; margin: 0">// String</p>
+      </div > <hr />
+      <h3>Masalan-2</h3>
+      <p><b>Type coercion</b> - Javascript dasturlash tilida operator turli xil qiymatlar ustida ish olib borayotganda, ulardan birinchi avtomatik ravishda boshqa turga o'tish. Boshqa qilib aytganda ma'lumot turini avtomatik bir ko'rinishdan ikkinchi korinishga o'tish.</p>
+      <h3>Auto string conversion</h3>
+     <div style="display: flex;"> <code style="color: yellowgreen;">console.<code style="color: red;">log</code>('Men' + <code style="color: brown;">2005</code> + 'chi yilda tavallud topganman');</code>
+        <p style="opacity: 0.5; margin: 0">// auto string con</p></div>
+      <h3>Auto number conversion</h3>
+ <div style="display: flex;">     <code style="color: yellowgreen;">console.<code style="color: red;">log</code>('30' - '10' - <code style="color: brown;">5</code>);</code>
+    <p style="opacity: 0.5; margin: 0">// auto number conversion</p></div>
+    <hr>
+    <h3><b>Masalan-3</b></h3>
+    <h4><b>Truthy va Falsy💼</b>
+    </h4>
+    <p><code>Javascript</code> dasturlash tilida berilgan qiymatni Boolean ko'rinishga o'tkazilganda, ular <code>Truthy</code> yoki <code>Falsy</code> ko'rinishga keladi. <code>Truthy</code> bu true rost qiymatiga ega bo'lgan ma'lumotlar, <code>Falsy</code> esa false qiymatiga ega bo'lganlarga aytiladi.</p>
+    <h3>Falsy ko'rinishga keladigon qiymatlar</h3>
+<ul>
+   <b> <li>false</li>
+    <li>0</li>
+    <li>''</li>
+    <li>undefined</li>
+    <li>null</li>
+    <li>NaN</li>
+    <li>0n</li></b>
+</ul>
+    <script src="./app.js"></script>
+  </body>
+</html>
